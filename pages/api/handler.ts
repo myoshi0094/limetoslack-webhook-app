@@ -5,7 +5,7 @@ export default function handler(
   request: NextApiRequest,
   response: NextApiResponse,
 ) {
-  axios.post('https://hooks.slack.com/services/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', {
+  axios.post('', {
     text: 'Hello, World!'
   })
   .then(function (response) {
