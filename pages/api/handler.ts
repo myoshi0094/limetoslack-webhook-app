@@ -5,7 +5,8 @@ export default function handler(
   request: NextApiRequest,
   response: NextApiResponse,
 ) {
-  axios.post('', {
+  //slackwebhookURLを挿入
+  axios.post('https://hooks.slack.com/services/hoge/fuga', {
     text: 'Hello, World!'
   })
   .then(function (response) {
